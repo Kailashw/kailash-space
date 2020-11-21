@@ -10,4 +10,49 @@
   .header-link li:active {
     color: #0070f3;
     border-color: #0070f3;
+}
+
+.header ul {
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.header li {
+  flex-direction: row;
+  display: flex;
+}
+
+.webView{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.webView a{
+  font-weight: 600;
+}
+
+.mobileView{
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header ul {
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
   }
+
+  div.webView {
+    display: none;
+  }
+  
+  div.mobileView{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+}
+  

@@ -21,39 +21,3 @@ ul {
   justify-content: flex-start;
   list-style-type: none;
 }
-
-li{
-  padding: 1em;
-}
-
-div#myDIV {
-  display: none;
-}
-
-div.web-view{
-  display: block;
-}
-
-div.mobile-view{
-  display: none;
-}
-
-@media (max-width: 600px) {
-  ul {
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: column;
-  }
-  li{
-    padding: 0.3em;
-  }
-
-  div.web-view {
-    display: none;
-  }
-  
-  div.mobile-view{
-    display: block;
-  }
-  
-}
