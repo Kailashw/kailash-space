@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css'
+import Link from 'next/Link'
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
         <p className={styles.description}>
           A web designer and developer from Bangalore in India. I create bespoke websites to help people go further online.
         </p>
-
+        <p className={styles.code}>
+          <Link href="/about"><a href="#"> Know More about me</a></Link>
+        </p>
       </main>
     </div>
   )

@@ -7,7 +7,7 @@ class Header extends Component {
         return (
             <div className={styles.header}>
                 <div className="mobile-view">
-                    <button onClick={myFunction}><Image src="/menu.svg" alt="menu-icon" width="32" height="32" /></button>
+                    <button onClick={myFunction}> <img src='/menu.png' alt="menu-icon" width="32" height="32" /> </button>
                 </div>
                 <div id="myDIV">
                     <ul>

@@ -12,6 +12,9 @@ First, run the development server:
    yarn dev
 ```
 
+To Access this projet live demo [click here](http://kailash-space.s3-website.ap-south-1.amazonaws.com)
+```#or
+```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start navigating  to different pages by simply clicking on navigation menu in header. The content is partly-responsive.
