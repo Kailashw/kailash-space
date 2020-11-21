@@ -1,0 +1,13 @@
+.header{
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    align-items: flex-start;
+    background-color: #fafbfc;
+  }
+  
+  .header-link li:hover,
+  .header-link li:focus,
+  .header-link li:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }

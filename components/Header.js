@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Image from 'next/image'
 import Link from 'next/Link'
-
+import styles from "./header.module.css";
 class Header extends Component {
     render() {
         return (
-            <>
+            <div className={styles.header}>
                 <div className="mobile-view">
                     <button onClick={myFunction}><Image src="/menu.svg" alt="menu-icon" width="32" height="32" /></button>
                 </div>
@@ -27,7 +27,7 @@ class Header extends Component {
                         <li><a href="mailto:kailashwall@gmail.com" target="_blank"> Contact</a></li>
                     </ul>
                 </div>
-            </>
+            </div>
         )
     }
 }

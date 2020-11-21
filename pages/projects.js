@@ -1,14 +1,15 @@
 import React from 'react'
 import styles from './projects.module.css'
 
-function projects({ repos }) {
+function projects({ repos, userDetails }) {
     repos = repos.sort(function (a, b) {
         return b.forks- a.forks;
     });
+
     return (
         <div className={styles.container}>
             <main className={styles.main}>
-                <p className={styles.title}> List of Projects </p>
+                <p className={styles.title}> Repositories </p>
                 <p className={styles.description}> Currently fetching all the git repositories creatd by me</p>
                 <div className={styles.grid}>
                     {repos.map((repo) => (
@@ -42,10 +43,12 @@ export default projects
 // calling external api's here.
 export async function getStaticProps() {
     const res = await fetch('https://api.github.com/users/kailashw/repos')
+    const userDetails = await fetch('https://api.github.com/users/kailashw').then(res=> res.json());
     const repos = await res.json()
     return {
         props: {
             repos,
+            userDetails,
         },
     }
 }
