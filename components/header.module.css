@@ -21,6 +21,7 @@
 .header li {
   flex-direction: row;
   display: flex;
+  padding: 0px 5px;
 }
 
 .webView{
@@ -52,6 +53,11 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+
+  .header li {
+    border-right: 3px solid #d6d3d3;
+    margin: 0px 4px;
   }
   
 }
