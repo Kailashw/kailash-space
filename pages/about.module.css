@@ -16,6 +16,70 @@
     align-items: center;
   }
 
+  .main a{
+    color: #4f17e9;
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+      Bitstream Vera Sans Mono, Courier New, monospace;
+  }
+
+  .main a:hover{
+    color: #210277;
+    border-color: #210277;
+    font-weight: 600;
+  }
+
   .title{
     text-align: center;
+  }
+
+  .description {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    margin-left: 2em;
+  }
+
+  .about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .aboutRight{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .content ul li{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about img{
+    border-radius : 50%;
+    height: 20rem;
+  }
+
+  @media (max-width: 600px) {
+    .about{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .about img{
+      max-width: 300px;
+      margin-left: 2em;
+      border-radius : 50%;
+    }
   }
