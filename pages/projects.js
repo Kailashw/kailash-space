@@ -14,12 +14,17 @@ function projects({ repos, userDetails }) {
                 <div className={styles.grid}>
                     {repos.map((repo) => (
                         <div key={repo.name} className={styles.card}>
-                        <a href={repo.html_url} target="_blank">
-                            <h5>Project Name:</h5><label className={styles.description}> {repo.name}</label><br/>
-                            <h5>Description:</h5><label className={styles.description}> {truncateString(repo.description,60)}</label><br/>
-                            <h5>Number of Forks:</h5><label className={styles.description}> {repo.forks}</label><br/>
-                            <h5>Number of Stars:</h5><label className={styles.description}> {repo.stargazers_count}</label><br/>
-                        </a>
+                            <h3 className={styles.title}> {repo.name}</h3>
+                            <p className={styles.description}> {truncateString(repo.description,60)}</p>
+                            <br/>
+                            <p className={styles.description}>
+                                <img src='/forks.png' width={20} height={20}/> {repo.forks} {'  '}
+                                <img src='/star.png' width={20} height={20}/> {repo.stargazers_count}
+                            </p>
+                            <br/>
+                            <p className={styles.code}>
+                                <a href={repo.html_url} target='_blank'> Click here to checkout repo on GIT...</a>
+                            </p>
                         </div>
                     ))}
                 </div>
